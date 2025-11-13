@@ -28,7 +28,7 @@ function ZoomButtons() {
 
 function Leafleft() {
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative sd w-full h-screen">
       <MapContainer
         zoomControl={false} // غیرفعال کردن کنترل پیش‌فرض Leaflet
         center={tabrizPosition}
