@@ -6,7 +6,7 @@ export default function SearchTopbar() {
     <div>
       <div className="w-full h-10 bg-primary-2 rounded-md flex items-center  relative">
         {!searchValue && (
-          <div className="flex items-center gap-1 text-md pr-3  absolute">
+          <div className="flex items-center gap-1 text-md pr-3  absolute pointer-events-none">
             <span className="text-slate-500 space-x-11">جستوجو در </span>
             <img
               className="w-20 h-auto"
