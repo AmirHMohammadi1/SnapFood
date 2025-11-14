@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Leafleft from "./Leafleft/Leafleft";
-import SearchCity from "./SearchCity/SearchCity";
 
 type props = {
   setShowModalAddreas: React.Dispatch<React.SetStateAction<boolean>>;

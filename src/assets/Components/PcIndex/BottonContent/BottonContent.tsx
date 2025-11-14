@@ -6,7 +6,7 @@ type props = {
   showModalAddreas : boolean
 }
 
-export default function BottonContent({showModalAddreas,setShowModalAddreas} : props) {
+export default function BottonContent({setShowModalAddreas} : props) {
   return (
     <div className="flex relative h-[500px]  justify-between w-full items-center">
       <div className="flex flex-col gap-1 pr-6">
