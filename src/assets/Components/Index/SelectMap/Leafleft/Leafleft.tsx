@@ -23,11 +23,12 @@ type props = {
 };
 
 function Leafleft({ setLocationName, locationName }: props) {
-  const [position, setPosition] = useState<position>({
-    lng: 51.3347,
-    lat: 35.7219,
-  });
+const position: [number, number] = [35.7219, 51.3347];
 
+
+  // useEffect(() => {
+
+  // } , )
   const [suburb, setSuburb] = useState("");
   const [city, setCity] = useState("");
 
