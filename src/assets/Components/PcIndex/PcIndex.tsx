@@ -6,8 +6,8 @@ import SelectMap from "../Index/SelectMap/SelectMap";
 export default function PcIndex() {
   const [showModalAddreas, setShowModalAddreas] = useState<boolean>(false);
   return (
-    <div className="container-custom bg-white sm:bg-primary-2  w-full  ">
-      <div className="mt-8 flex justify-between sm:pr-8 flex-col  h-155">
+    <div className=" bg-white sm:bg-primary-2  w-full  ">
+      <div className="flex justify-between sm:pr-8 flex-col  sm:h-155">
         <TopContent />
         <div className="sm:flex hidden">
           <BottonContent
