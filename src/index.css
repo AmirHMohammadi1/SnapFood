@@ -64,12 +64,13 @@ body{
   box-sizing: border-box;
 }
 
-.container-custom{
-  max-width: 93%;
+.container-custom {
+  max-width: 98%;
+  min-width: 98%;
   margin: 0 auto;
+  box-sizing: border-box; 
 
 }
-
 
 .loader {
     width: 48px;

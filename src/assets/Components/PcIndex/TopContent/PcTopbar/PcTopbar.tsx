@@ -1,7 +1,7 @@
 
 export default function PcTopbar() {
   return (
-<div className="hidden sm:flex justify-between pl-6 items-center">
+<div className="hidden sm:flex justify-between pl-6 items-center min-w-11">
         <svg className="w-24 h-24 sm:w-34 sm:h-34">
           <use xlinkHref="#logo-snap"></use>
         </svg>
