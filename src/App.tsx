@@ -6,7 +6,7 @@ function App() {
 
   const router = useRoutes(routes)
   return (
-    <div className='px-4 m-auto py-4 sm:py-0'>
+    <div className='container-custom bg-slate-100 m-auto mt-4 sm:py-0'>
       {router}
     </div>
   )

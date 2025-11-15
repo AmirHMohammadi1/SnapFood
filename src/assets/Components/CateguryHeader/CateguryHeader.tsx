@@ -38,7 +38,7 @@ export default function CateguryHeader() {
 
   return (
     <div>
-      <div className="grid grid-cols-4 gap-2 w-full">
+      <div className="grid pb-4 bg-white grid-cols-4 gap-2 w-full">
         {items.map((item) => (
           <CateguryItem {...item} />
         ))}
