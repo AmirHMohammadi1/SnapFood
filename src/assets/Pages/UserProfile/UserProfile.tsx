@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import MenuMobile from "../../Components/MenuMobile/MenuMobile";
 import UserProfiles from "../../Components/UserProfiles/UserProfiles";
 
@@ -18,11 +19,11 @@ export default function UserProfile() {
             برای استفاده راحت‌تر و امکان ثبت سفارش به حساب کاربری خود وارد شوید
             یا حساب کاربری ایجاد کنید.
           </p>
-          <div className=" rounded-md  text-center text-white">
+          <Link to="/login/phone" className=" rounded-md  text-center text-white">
             <button className="bg-btnLogin py-2.5 px-4 rounded-md">
               ورود به حساب کاربری
             </button>
-          </div>
+          </Link>
         </div>
       </div>
       <div className="h-2 bg-line"></div>
