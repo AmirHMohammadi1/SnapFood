@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-
-
 @font-face {
   font-family: Dana;
   src: url("./../public/Fonts/Dana/woff2/DanaFaNum-Medium.woff2");
@@ -17,79 +15,79 @@
   src: url("./../public/Fonts/Morabba/woff2/Morabba-Medium.woff2");
 }
 
-
 @font-face {
   font-family: Morabba-Bold;
   src: url("./../public/Fonts/Morabba/woff2/Morabba-Bold.woff2");
 }
 
-.transition-md{
+.transition-md {
   transition: all 0.4s ease;
 }
 
+@theme {
+  --text-md: 15px;
+  --breakpoint-x: 400px;
+  --breakpoint-xs: 468px;
+  --breakpoint-md: 548px;
+  --breakpoint-mmd: 768px;
+  --breakpoint-s: 200px;
+  --text-x: 10px;
+  --font-Dana: Dana;
+  --font-Dana-Bold: Dana-Bold;
+  --font-Morabba: Morabba;
+  --font-Morabba-Bold: Morabba-Bold;
 
-@theme{
-    --text-md : 15px ;
-    --breakpoint-x : 400px;
-    --breakpoint-xs : 468px;
-    --breakpoint-md : 548px;
-    --breakpoint-mmd : 768px;
-    --breakpoint-s : 200px;
-    --text-x : 10px;
-    --font-Dana : Dana;
-    --font-Dana-Bold : Dana-Bold;
-    --font-Morabba : Morabba;
-    --font-Morabba-Bold : Morabba-Bold;
-
-    --color-primary : #F9FAFB;
-    --color-primary-2 : #EBEDF0;
-    --color-secondry : #FF00A6;
-    --color-secondary-2 : rgb(255, 237, 237);
-    --color-secondary-3 : rgb(189, 0, 3);
-    --color-item : rgba(19, 20, 31, 0.08);
-    --color-btnLogin : rgb(226, 0, 116);
-    --color-line : rgba(19, 20, 31, 0.05)
-    
+  --color-primary: #f9fafb;
+  --color-primary-2: #ebedf0;
+  --color-secondry: #ff00a6;
+  --color-secondary-2: rgb(255, 237, 237);
+  --color-secondary-3: rgb(189, 0, 3);
+  --color-item: rgba(19, 20, 31, 0.08);
+  --color-btnLogin: rgb(226, 0, 116);
+  --color-line: rgba(19, 20, 31, 0.05);
 }
 
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;             /* Chrome, Safari */
+  display: none; /* Chrome, Safari */
 }
 
-body{
+body {
   font-family: "Dana";
   box-sizing: border-box;
 }
+
+.box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+  rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 .container-custom {
   max-width: 98%;
   min-width: 98%;
   margin: 0 auto;
-  box-sizing: border-box; 
-
+  box-sizing: border-box;
 }
 
 .loader {
-    width: 48px;
-    height: 48px;
-    border: 5px solid rgb(189, 0, 3);
-    border-bottom-color: transparent;
-    border-radius: 50%;
-    display: inline-block;
-    box-sizing: border-box;
-    animation: rotation 1s linear infinite;
-    }
+  width: 48px;
+  height: 48px;
+  border: 5px solid rgb(189, 0, 3);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
 
-    @keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-    } 
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

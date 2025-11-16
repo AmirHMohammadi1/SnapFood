@@ -9,7 +9,7 @@ export default function MenuMobile() {
   ];
 
   return (
-    <div className="w-full right-0 fixed bg-white border-t-slate-200 border-t-2  bottom-0">
+    <div className="w-full right-0 fixed sm:hidden bg-white border-t-slate-200 border-t-2  bottom-0">
       <div className=" px-9 py-2 ">
         <div className="flex items-center justify-between">
           {menus.map((mnu) => (
