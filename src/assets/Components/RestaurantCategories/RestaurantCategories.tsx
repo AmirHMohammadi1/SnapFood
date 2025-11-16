@@ -137,7 +137,7 @@ export default function RestaurantCategories() {
           </div>
         </div>
       </div>
-      <div className="flex relative gap-5 py-2 overflow-x-auto px-3 scrollbar-hide whitespace-nowrap">
+      <div className=" sm:flex  hidden relative gap-5 py-2 overflow-x-auto px-3 scrollbar-hide whitespace-nowrap">
         {categoriesItemsPc.map((item) => (
           <div className="">
             <CategoriesBoxesPc {...item} />

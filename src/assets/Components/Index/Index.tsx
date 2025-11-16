@@ -2,6 +2,7 @@ import CateguryHeader from "../CateguryHeader/CateguryHeader";
 import MenuMobile from "../MenuMobile/MenuMobile";
 import PcIndex from "../PcIndex/PcIndex";
 import RestaurantCategories from "../RestaurantCategories/RestaurantCategories";
+import RestaurantCategoriesPc from "../RestaurantCategoriesPc/RestaurantCategoriesPc";
 
 export default function Index() {
   return (
@@ -14,8 +15,9 @@ export default function Index() {
           <CateguryHeader />
         </div>
         <div className="h-2 bg-line "></div>
-        <div className="px-4">
+        <div className=" flex-col flex gap-10">
           <RestaurantCategories />
+          <RestaurantCategoriesPc/>
         </div>
 
         <MenuMobile />
