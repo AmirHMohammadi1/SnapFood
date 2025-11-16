@@ -11,12 +11,8 @@ export default function Index() {
         <CateguryHeader />
         <RestaurantCategories />
 
-        <div className="w-full right-0 fixed border-t-slate-200 border-t-2  bottom-0">
-          <div className=" px-9 py-2 ">
             <MenuMobile />
-          </div>
         </div>
-      </div>
     </div>
   );
 }

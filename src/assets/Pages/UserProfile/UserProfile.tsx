@@ -1,8 +1,9 @@
+import MenuMobile from "../../Components/MenuMobile/MenuMobile";
 import UserProfiles from "../../Components/UserProfiles/UserProfiles";
 
 export default function UserProfile() {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 pb-20">
       <div className="flex  flex-col gap-5 justify-center items-center ">
         <div className="">
           <img
@@ -26,6 +27,7 @@ export default function UserProfile() {
       </div>
       <div className="h-2 bg-line"></div>
       <UserProfiles/>
+      <MenuMobile/>
     </div>
   );
 }
