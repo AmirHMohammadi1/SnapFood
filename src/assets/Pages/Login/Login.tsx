@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   const [phoneNumber, setPhoneNumber] = useState<number | string>(0);
@@ -40,9 +41,9 @@ export default function Login() {
       </div>
       <div className="flex items-end justify-center w-full py-4 px-5 border-t-slate-300 border-t pt-6 ">
         {phoneNumber.toString().length > 3 ? (
-          <button className={` rounded-md bg-gray-800 text-white w-full py-4`}>
+          <Link to="/login/otp"  className={` rounded-md text-center bg-gray-800 text-white w-full py-4`}>
             ادامه
-          </button>
+          </Link>
         ) : (
           <span className={` rounded-md bg-slate-300 text-center text-white w-full py-4`}>
             ادامه
