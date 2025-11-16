@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 
 export default function OtpLogin() {
   const [otp, setOtp] = useState(["", "", "", ""]);
@@ -9,6 +9,8 @@ export default function OtpLogin() {
 
     const newOtp = [...otp];
     newOtp[index] = value;
+    console.log(newOtp);
+    
     setOtp(newOtp);
 
     if (value && index < 3) {
@@ -16,6 +18,12 @@ export default function OtpLogin() {
     }
   };
 
+
+  const handelKeyDown = (e : React.KeyboardEvent<HTMLInputElement> , index : number) => {
+    if(e.key === "Backspace" && !otp[index] && index > 0){
+        inputsRef.current[index - 1]?.focus()
+    }
+  }
   return (
     <div className="flex flex-col justify-between h-full">
       <div className="px-4 flex flex-col gap-10">
@@ -24,13 +32,13 @@ export default function OtpLogin() {
             <use xlinkHref="#arrow-right"></use>
           </svg>
           <span className="text-[19px] sm:text-2xl">تایید شماره موبایل</span>
-          <div className="">
+          <div className="" >
             <span className="text-[14px] sm:text-[18px] text-gray-600">
               کد ارسال شده به شماره 09123456789 رو وارد کنید.
             </span>
           </div>
         </div>
-        <div className="flex gap-3 justify-center items-center">
+        <div dir="ltr" className="flex gap-3 justify-center items-center">
           {otp.map((digit: string, index: number) => (
             <input
               className="border-2 border-gray-800 w-13 h-13 rounded-md text-center"
@@ -41,6 +49,7 @@ export default function OtpLogin() {
               }}
               maxLength={1}
               value={digit}
+              onKeyDown={(e) => handelKeyDown(e,index)}
               onChange={(e) => handelChange(e.target.value, index)}
             />
           ))}
