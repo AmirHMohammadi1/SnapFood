@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import CategoriesTitle from "../CategoriesTitle/CategoriesTitle";
 import CategoriesBoxes from "./CategoriesBoxesMobile/CategoriesBoxesMobile";
-import CategoriesBoxesPc from "./CategoriesBoxesPc/CategoriesBoxesPc";
-import Slider from "react-slick";
+// import CategoriesBoxesPc from "./CategoriesBoxesPc/CategoriesBoxesPc";
+// import Slider from "react-slick";
 import SliderPc from "../RestaurantCategoriesPc/SliderPc/SliderPc";
 
 export default function RestaurantCategories() {

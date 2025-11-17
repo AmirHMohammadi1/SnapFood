@@ -24,7 +24,7 @@
   transition: all 0.4s ease;
 }
 
-@theme {
+@theme{
   --text-md: 15px;
   --breakpoint-x: 400px;
   --breakpoint-xs: 468px;

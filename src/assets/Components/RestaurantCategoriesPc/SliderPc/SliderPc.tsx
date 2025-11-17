@@ -19,7 +19,6 @@ type SliderPcProps = {
 const SliderPc: React.FC<SliderPcProps> = ({ data }) => {
   const sliderRef = useRef<Slider>(null);
   const lengthData = data.length;
-  const [goSliderEnd, setGoSliderEnd] = useState(lengthData);
   
   var settings = {
     dots: false,
@@ -36,7 +35,7 @@ const SliderPc: React.FC<SliderPcProps> = ({ data }) => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          initialSlide: goSliderEnd, 
+          initialSlide: lengthData, 
           dots: true,
         },
       },

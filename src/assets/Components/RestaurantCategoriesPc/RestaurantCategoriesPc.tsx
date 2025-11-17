@@ -1,6 +1,5 @@
 import CategoriesTitle from "../CategoriesTitle/CategoriesTitle";
 import RestaurantCategoriesPcBoxes from "./RestaurantCategoriesPcBoxes/RestaurantCategoriesPcBoxes";
-import SliderPc from "./SliderPc/SliderPc";
 
 
 import "./StyleSlider/StyleSlider.css";
