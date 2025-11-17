@@ -58,7 +58,7 @@ export default function RestaurantCategoriesPc() {
         <CategoriesTitle title="دسته بندی ها" />
       </div>
       <div className="px-4 grid grid-2 xs:grid-cols-3 md:grid-cols-4 mmd:grid-cols-5 mmds:grid-cols-6 items-center justify-center gap-6">
-        <div className=""></div>
+        <div className="">.</div>
       </div>
     </div>
   );
