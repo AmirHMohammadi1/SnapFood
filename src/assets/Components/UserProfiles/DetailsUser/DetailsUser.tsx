@@ -1,7 +1,13 @@
+import { use, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function DetailsUser() {
-    const localeData = JSON.parse(localStorage.getItem("userRcFood") || "{}");
+
+    const [localeData, setLoacaleData] = useState()
+    useEffect(() => {
+        const localeData = JSON.parse(localStorage.getItem("userRcFood") || "{}");
+        setLoacaleData(localeData)
+    }, [localeData])
 
     return (
         <div>
@@ -20,7 +26,7 @@ export default function DetailsUser() {
                             </svg>
                         </div>
                     </div>
-                   
+
                 </div>
             ) : (
                 <div className="flex  flex-col gap-5 justify-center items-center ">
