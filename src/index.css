@@ -30,7 +30,7 @@
   --breakpoint-xs: 468px;
   --breakpoint-md: 548px;
   --breakpoint-mmd: 768px;
-  --breakpoint-mmds : 978px;
+  --breakpoint-mmds: 978px;
   --breakpoint-s: 200px;
   --text-x: 10px;
   --font-Dana: Dana;
@@ -49,12 +49,15 @@
 }
 
 .scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
+  /* Chrome, Safari */
 }
 
 body {
@@ -62,16 +65,35 @@ body {
   box-sizing: border-box;
 }
 
-
-.container-custom {
-  width: 1100px!important;
-  
+/* .container-customMobile{
+  max-width: 96%;
   margin: 0 auto;
+} */
+
+
+@media screen and (max-width: 1200px) {
+
+  .container-custom {
+    width: 96%;
+    margin: 0 auto;
+
+  }
 
 }
 
-.slick-track{
-  width: 1908px!important;
+@media screen and (min-width: 1200px) {
+
+  .container-custom {
+    width: 1100px !important;
+
+    margin: 0 auto;
+
+  }
+
+}
+
+.slick-track {
+  width: 1908px !important;
 }
 
 .loader {
@@ -89,6 +111,7 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
