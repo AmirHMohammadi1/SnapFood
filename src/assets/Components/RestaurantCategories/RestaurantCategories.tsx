@@ -142,15 +142,7 @@ export default function RestaurantCategories() {
       </div>
       <div className=" sm:flex  hidden relative gap-5 py-2 overflow-x-auto px-3 scrollbar-hide whitespace-nowrap">
         <SliderPc data={categoriesItemsPc}/>
-        <div className="absolute top-[35%] left-1 box-shadow">
-          <div className="inset-0 bg-white p-2  rounded-full border-3 border-sky-700 overflow-hidden flex items-center justify-center text-secondry">
-            <div className=" backdrop-blur-md cursor-pointer  rounded-full  flex items-center justify-center">
-              <svg className="w-6 h-6">
-                <use xlinkHref="#chevron-left"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
+   
       </div>
     </>
   );
