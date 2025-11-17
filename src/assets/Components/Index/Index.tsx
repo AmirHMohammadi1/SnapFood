@@ -17,7 +17,10 @@ export default function Index() {
         <div className="h-2 bg-line "></div>
         <div className=" flex-col flex gap-10">
           <RestaurantCategories />
-          <RestaurantCategoriesPc/>
+
+          <div className="hidden md:block">
+            <RestaurantCategoriesPc />
+          </div>
         </div>
 
         <MenuMobile />

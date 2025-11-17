@@ -7,7 +7,7 @@ export default function Login() {
   return (
     <div className="flex flex-col justify-between h-full">
       <div className="px-4 flex flex-col gap-5">
-        <svg onClick={() => history.back()} className="w-6 h-6 sm:w-8 sm:h-8">
+        <svg onClick={() => history.back()} className="w-6 h-6 sm:w-8 sm:h-8 cursor-pointer">
           <use xlinkHref="#arrow-right"></use>
         </svg>
         <span className="text-[19px] sm:text-2xl">ورود به حساب کابری</span>

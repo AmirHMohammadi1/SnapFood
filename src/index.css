@@ -30,6 +30,7 @@
   --breakpoint-xs: 468px;
   --breakpoint-md: 548px;
   --breakpoint-mmd: 768px;
+  --breakpoint-mmds : 978px;
   --breakpoint-s: 200px;
   --text-x: 10px;
   --font-Dana: Dana;
@@ -61,15 +62,12 @@ body {
   box-sizing: border-box;
 }
 
-.box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-  rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-  rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 .container-custom {
-  max-width: 98%;
-  min-width: 98%;
+  width: 1100px!important;
+  
   margin: 0 auto;
-  box-sizing: border-box;
+
 }
 
 .loader {

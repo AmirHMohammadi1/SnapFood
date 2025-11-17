@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 export default function PcTopbar() {
   return (
@@ -16,7 +17,7 @@ export default function PcTopbar() {
             </span>
           </div>
           <div className="py-2 px-3 bg-secondry text-sm text-white rounded-sm">
-            <span>ورود یا عضویت</span>
+            <Link to="/login/phone">ورود یا عضویت</Link>
           </div>
         </div>
       </div>  )
