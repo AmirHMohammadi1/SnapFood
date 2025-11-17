@@ -1,4 +1,3 @@
-import DetailsUser from "./DetailsUser/DetailsUser";
 
 export default function UserProfiles() {
   const navUserProfile = [

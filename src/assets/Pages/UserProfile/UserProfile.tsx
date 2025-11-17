@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import MenuMobile from "../../Components/MenuMobile/MenuMobile";
 import UserProfiles from "../../Components/UserProfiles/UserProfiles";
 import DetailsUser from "../../Components/UserProfiles/DetailsUser/DetailsUser";
