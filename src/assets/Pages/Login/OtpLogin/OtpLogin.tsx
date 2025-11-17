@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function OtpLogin() {
   const [otp, setOtp] = useState(["", "", "", ""]);
@@ -10,7 +11,7 @@ export default function OtpLogin() {
     const newOtp = [...otp];
     newOtp[index] = value;
     console.log(newOtp);
-    
+
     setOtp(newOtp);
 
     if (value && index < 3) {
@@ -19,10 +20,31 @@ export default function OtpLogin() {
   };
 
 
-  const handelKeyDown = (e : React.KeyboardEvent<HTMLInputElement> , index : number) => {
-    if(e.key === "Backspace" && !otp[index] && index > 0){
-        inputsRef.current[index - 1]?.focus()
+  const handelKeyDown = (e: React.KeyboardEvent<HTMLInputElement>, index: number) => {
+    if (e.key === "Backspace" && !otp[index] && index > 0) {
+      inputsRef.current[index - 1]?.focus()
     }
+  }
+
+
+
+  const navigatePanelUser = useNavigate()
+  const handelrOtp = () => {
+    console.log(otp.join(""));
+    if (otp.join("").length < 4) {
+      alert("سید جان باید 4 رقم کد رو وارد کنید 😐")
+    }
+    else {
+      alert("خوش آومدی سلطان ❤️")
+      localStorage.setItem("userRcFood", JSON.stringify("mobin"))
+
+      setTimeout(() => {
+        navigatePanelUser("/user-profile")
+      }, 1500);
+    }
+
+
+
   }
   return (
     <div className="flex flex-col justify-between h-full">
@@ -49,14 +71,14 @@ export default function OtpLogin() {
               }}
               maxLength={1}
               value={digit}
-              onKeyDown={(e) => handelKeyDown(e,index)}
+              onKeyDown={(e) => handelKeyDown(e, index)}
               onChange={(e) => handelChange(e.target.value, index)}
             />
           ))}
         </div>
       </div>
       <div className="flex items-end justify-center w-full py-4 px-5 border-t-slate-300 border-t pt-6 ">
-        <button className={` rounded-md bg-gray-800 text-white w-full py-4`}>
+        <button onClick={() => handelrOtp()} className={` rounded-md bg-gray-800 text-white w-full py-4`}>
           تایید
         </button>
       </div>

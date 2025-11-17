@@ -1,3 +1,5 @@
+import DetailsUser from "./DetailsUser/DetailsUser";
+
 export default function UserProfiles() {
   const navUserProfile = [
     { title: "پشتیبانی", svg: "#support-svg", svgs: "#chevron-left" },
