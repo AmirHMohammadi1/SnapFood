@@ -2,10 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import CategoriesTitle from "../CategoriesTitle/CategoriesTitle";
 import CategoriesBoxes from "./CategoriesBoxesMobile/CategoriesBoxesMobile";
 import CategoriesBoxesPc from "./CategoriesBoxesPc/CategoriesBoxesPc";
+import Slider from "react-slick";
+import SliderPc from "../RestaurantCategoriesPc/SliderPc/SliderPc";
 
 export default function RestaurantCategories() {
   const [scrolled, setScrolled] = useState<boolean>(false);
   const scrollRef = useRef<HTMLDivElement | null>(null);
+  
 
   const handleScroll = () => {
     if (scrollRef.current)
@@ -138,11 +141,7 @@ export default function RestaurantCategories() {
         </div>
       </div>
       <div className=" sm:flex  hidden relative gap-5 py-2 overflow-x-auto px-3 scrollbar-hide whitespace-nowrap">
-        {categoriesItemsPc.map((item) => (
-          <div className="">
-            <CategoriesBoxesPc {...item} />
-          </div>
-        ))}
+        <SliderPc data={categoriesItemsPc}/>
         <div className="absolute top-[35%] left-1 box-shadow">
           <div className="inset-0 bg-white p-2  rounded-full border-3 border-sky-700 overflow-hidden flex items-center justify-center text-secondry">
             <div className=" backdrop-blur-md cursor-pointer  rounded-full  flex items-center justify-center">
